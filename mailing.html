@@ -13,6 +13,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        list-style: inside;
     }
 
     /*TEXT STYLES*/
@@ -61,7 +62,7 @@
 
     .article-1 {
         padding: 0px 32px;
-        background-image: url(../images/blue-gradient.jpg);
+        background-image: url(https://github.com/roacesar/Mailing-Holmes/blob/main/images/blue-gradient.jpg?raw=true);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top;
@@ -75,8 +76,13 @@
         padding: 24px;
     }
 
+    .article-1-header-tagline {
+        display: flex;
+        gap: 4px;
+    }
+
     .article-1-image {
-        background: url(../images/CIS__3539.jpeg);
+        background: url(https://github.com/roacesar/Mailing-Holmes/blob/main/images/CIS__3539.jpeg?raw=true);
         height: 548Px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -106,6 +112,128 @@
         background-color: #0077FF;
         transition: 0.25s;
     }
+
+    .article-2 {
+        padding: 0px 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .article-2-content {
+        background-color: #EFEFEF;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .article-2-content ul {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .article-2-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+        height: 148px;
+    }
+
+    .article-2-image-1 {
+        background: url(https://github.com/roacesar/Mailing-Holmes/blob/main/images/Screenshot%202025-12-15%20at%207.24.01%E2%80%AFPM.png?raw=true);
+        background-size: cover;
+        height: 100%;
+    }
+
+    .article-2-image-2 {
+        background: url(https://github.com/roacesar/Mailing-Holmes/blob/main/images/IMG_2012.jpg?raw=true);
+        background-size: cover;
+        height: 100%;
+    }
+
+    .article-2-image-3 {
+        background: url(https://github.com/roacesar/Mailing-Holmes/blob/main/images/IMG_2156.jpg?raw=true);
+        background-size: cover;
+        height: 100%;
+    }
+
+    .article-3 {
+        background-color: #FF9200;
+        padding: 32px;
+        margin: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .article-3-image {
+        background: url(https://github.com/roacesar/Mailing-Holmes/blob/main/images/60.png?raw=true);
+        height: 548Px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .article-3-text {
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .article-3-speaker {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .article-3-keynote {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .register-now-bottom {
+        margin: auto;
+        width: fit-content;
+    }
+
+    .register-now-bottom img {
+        width: 267px;
+    }
+
+    .lunch-bar {
+        background-color: #FF9200;
+        height: 64px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 32px 0px;
+    }
+
+    .mailing-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-legal {
+        font-size: 10px;
+        text-align: center;
+        border-top: 1px solid #96B6A4;
+        padding: 32px 0px;
+        margin: 0px 32px 32px 32px;
+    }
+
+    .footer-legal a {
+        text-decoration: underline;
+        color: black;
+    }
 </style>
 </head>
 
@@ -114,19 +242,19 @@
 <div class="mailing-body">
     <div class="top-header">
         <div class="top-header-1">
-            <a href="https://www.counselinginschools.org/" target="_blank"><img src="../images/counseling-logo.svg" alt="Logo Counseling In Schools"/></a>
+            <a href="https://www.counselinginschools.org/" target="_blank"><img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/counseling-logo.svg" alt="Logo Counseling In Schools"/></a>
         </div>
         <div class="top-header-2">
-            <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/home#" target="_blank"><img src="../images/register-now.svg" alt="Register Now, March 5-6 2026"></a>
+            <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/home#" target="_blank"><img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/register-now.svg" alt="Register Now, March 5-6 2026"></a>
         </div>
     </div>
     <div class="article-1">
         <div class="article-1-header">
             <div>
-                <img src="../images/collaboration-in-action.svg" alt="">
+                <img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/collaboration-in-action.svg" alt="">
             </div>
-            <div>
-                <img src="../images/tagline-01.svg" alt=""><img src="../images/tagline-02.svg" alt="">
+            <div class="article-1-header-tagline">
+                <img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/tagline-01.svg" alt=""><img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/tagline-02.svg" alt="">
             </div>
         </div>
         <div class="article-1-image"></div>
@@ -137,13 +265,76 @@
             <p class="p-body">
                 Counseling In Schools (CIS) is proud to present the return of our dynamic school-based mental health conference! Over two days, a diverse roster of presenters will illuminate the vital mental health and social-emotional work happening in NYC schools, and you will strengthen your practice through collaborative interventions.
             </p>
-            <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/agenda
-            " target="_blank">
+            <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/agenda" target="_blank">
                 <div class="mailing-button">
                     <p>Read about the program</p>
                     <span class="material-symbols-rounded">arrow_forward_ios</span>
                 </div>
             </a>
+        </div>
+    </div>
+    <div class="article-2">
+        <p class="p-title">
+            Why attend<br>
+            Collaboration<br>
+            In Action 2026?
+        </p>
+        <div class="article-2-content">
+            <div class="article-2-images">
+                <div class="article-2-image-1"></div>
+                <div class="article-2-image-2"></div>
+                <div class="article-2-image-3"></div>
+            </div>
+            <ul>
+                <li>2 powerful days</li>
+                <li>30+ expert presenters</li>
+                <li>15+ sessions</li>
+                <li><b>13 CEUs available</b></li>
+                <li>200+ attendees</li>
+            </ul>
+            <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/speakers" target="_blank">
+                <div class="mailing-button">
+                    <p>Get to know our amazing cohort of presenters</p>
+                    <span class="material-symbols-rounded">arrow_forward_ios</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="article-3">
+        <p class="p-title" style="color: white;">
+            Featured speaker
+        </p>
+        <div class="article-3-image"></div>
+        <div class="article-3-text">
+            <div class="article-3-speaker">
+                <p style="font-size: 24px; font-weight: 700;">Cathy Malchiodi</p>
+                <p style="font-size: 16px;">PhD, LPCC, LPAT, REAT</p>
+            </div>
+            <div class="article-3-keynote">
+                <p style="font-size: 16px;"><b>KEYNOTE SPEAKER</b></p>
+                <p style="font-size: 14px;">
+                    Leading international expert, writer, and educator in the fields of art therapy, expressive arts therapy, trauma and arts in healthcare. She hold a doctorate in psychology, a Licensed Professional Art Therapist, Registered Expressive Arts Therapist, and Licensed Professional Clinical Counselor, and has had over 30 years of experience and education in trauma intervention and disaster relief and integrative approaches to health
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="register-now-bottom">
+        <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/home#" target="_blank"><img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/register-now.svg" alt="Register Now, March 5-6 2026"></a>
+    </div>
+    <div class="lunch-bar">
+        <p style="font-size: 32px; font-weight: 700; text-transform: uppercase; color: white;">Lunch provided</p>
+    </div>
+    <div class="mailing-footer">
+        <div class="top-header-1">
+            <a href="https://www.counselinginschools.org/" target="_blank"><img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/counseling-logo.svg" alt="Logo Counseling In Schools"/></a>
+        </div>
+        <div class="footer-legal">
+            <p>
+                Counseling In Schools is supporting the emotional and social wellbeing of New York City school communities, creating programs that equip children, families, teachers, and administrators with tools and support to flourish and thrive.
+                <br><br>
+                © Counseling In Schools | <a href="https://www.counselinginschools.org/privacy-policy/">Privacy</a><br>
+                Counseling In Schools is a registered 501(c)(3) organization
+            </p>
         </div>
     </div>
 </div>
