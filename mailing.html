@@ -32,7 +32,7 @@
     /*------------*/
 
     body {
-        background-color: #888888;
+        background-color: f3f3f3;
     }
 
     a {
@@ -64,7 +64,7 @@
         padding: 0px 32px;
         background-image: url(https://github.com/roacesar/Mailing-Holmes/blob/main/images/blue-gradient.jpg?raw=true);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 100% 224px;
         background-position: top;
     }
 
@@ -86,6 +86,7 @@
         height: 548Px;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     .article-1-text {
@@ -234,7 +235,105 @@
         text-decoration: underline;
         color: black;
     }
+
+    /*------------RESPONSIVE------------*/
+
+    @media screen and (max-width: 600px) {
+        .top-header {
+            gap: 24px;
+            position: static;
+        }
+
+        .top-header-2 {
+            position: static;
+        }
+
+        .article-1-header-tagline {
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .article-1-header-tagline img {
+            height: 20px;
+        }
+
+        .article-1-image {
+            height: 420Px;
+        }
+
+        .article-1 {
+            padding: 0px 24px;
+            background-size: 100% 254px;
+        }
+        
+        .mailing-button {
+            padding: 0px 16px;
+        }
+
+        .article-2 {
+            padding: 0px 24px;
+        }
+
+        .article-2-content {
+            padding: 16px;
+            gap: 24px;
+        }
+
+        .article-2-content ul {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .article-2-images {
+            gap: 8px;
+            height: 128px;
+        }
+
+        /*TEXT STYLES*/
+    
+        .p-title {
+            font-size: 28px;
+        }
+
+        .article-3 {
+            padding: 16px;
+            margin: 24px;
+            gap: 16px;
+        }
+
+        .article-3-image {
+            height: 360Px;
+            background-position: center;
+        }
+
+        .article-3-text {
+            margin-top: 8px;
+            gap: 24px;
+        }
+
+        .article-3-speaker {
+            gap: 8px;
+        }
+
+        .article-3-keynote {
+            gap: 24px;
+        }
+
+        .register-now-bottom img {
+            width: 220px;
+        }
+
+        .mailing-footer {
+            gap: 24px;
+        }
+
+        .footer-legal {
+            padding: 24px 0px;
+            margin: 0px 24px 24px 24px;
+        }
+    }
 </style>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
   
