@@ -1,353 +1,22 @@
 <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios" />
 <style>
-    .material-symbols-rounded {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 200,
-    'GRAD' 0,
-    'opsz' 20
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        list-style: inside;
-    }
-
-    /*TEXT STYLES*/
-    
-    .p-title {
-        font-size: 32px;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #FF9200;
-    }
-
-    .p-body {
-        font-size: 16px;
-    }
-
-    /*------------*/
-
-    table, tr, td {
-        border-collapse: collapse;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .mailing-body {
-        max-width: 600px;
-        margin: auto;
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: white;
-        border-collapse: collapse;
-    }
-
-    .top-header {
-        height: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-
-    .top-header-2 {
-        position: absolute;
-        right: 16px;
-    }
-
-    .article-1 {
-        padding: 0px 32px;
-        background-image: url(https://github.com/roacesar/Mailing-Holmes/blob/main/images/blue-gradient.jpg?raw=true);
-        background-repeat: no-repeat;
-        background-size: 100% 224px;
-        background-position: top;
-    }
-
-    .article-1-header {
-        width: 100%;
-        margin: 24px 0px;
-    }
-
-    .article-1-header td {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .article-1-header-tagline {
-        display: flex;
-        gap: 4px;
-    }
-
-    .article-1-image-container {
-        padding: 0px 32px;
-    }
-
-    .article-1-image {
-        background: url(https://github.com/roacesar/Mailing-Holmes/blob/main/images/art-1.jpg?raw=true);
-        height: 548Px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .article-1-text {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        margin: 32px 0px;
-        padding: 0 32px;
-    }
-
-    .mailing-button {
-        background-color: #009BFF;
-        height: 44px;
-        color: white;
-        width: fit-content;
-        padding: 0px 24px;
-        display: flex;
-        flex-direction: row;
-        gap: 8px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .mailing-button:hover {
-        background-color: #0077FF;
-        transition: 0.25s;
-    }
-
-    .article-2 {
-        padding: 0px 32px;
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .article-2-content {
-        background-color: #EFEFEF;
-        padding: 32px;
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .article-2-content ul {
-        font-size: 20px;
-        line-height: 24px;
-    }
-
-    .article-2-images {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 16px;
-        height: 148px;
-    }
-
-    .article-2-image-1 {
-        background: url(https://github.com/roacesar/Mailing-Holmes/blob/main/images/art-2-01.jpg?raw=true);
-        background-size: cover;
-        height: 100%;
-    }
-
-    .article-2-image-2 {
-        background: url(https://github.com/roacesar/Mailing-Holmes/blob/main/images/art-2-02.jpg?raw=true);
-        background-size: cover;
-        height: 100%;
-    }
-
-    .article-2-image-3 {
-        background: url(https://github.com/roacesar/Mailing-Holmes/blob/main/images/art-2-03.jpg?raw=true);
-        background-size: cover;
-        height: 100%;
-    }
-
-    .article-3 {
-        background-color: #FF9200;
-        padding: 32px;
-        margin: 32px;
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .article-3-image {
-        background: url(https://github.com/roacesar/Mailing-Holmes/blob/main/images/speaker.png?raw=true);
-        height: 548Px;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .article-3-text {
-        color: white;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .article-3-speaker {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .article-3-keynote {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .register-now-bottom {
-        margin: auto;
-        width: fit-content;
-    }
-
-    .register-now-bottom img {
-        width: 267px;
-    }
-
-    .lunch-bar {
-        background-color: #FF9200;
-        height: 64px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 32px 0px;
-    }
-
-    .mailing-footer {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-    }
-
-    .footer-legal {
-        font-size: 10px;
-        text-align: center;
-        border-top: 1px solid #96B6A4;
-        padding: 32px 0px;
-        margin: 0px 32px 32px 32px;
-    }
-
-    .footer-legal a {
-        text-decoration: underline;
-        color: black;
-    }
-
-    /*------------RESPONSIVE------------*/
-
     @media screen and (max-width: 600px) {
         .top-header {
-            gap: 24px;
-            position: static;
+            position: static !important;
+            gap: 16px !important;
         }
 
         .top-header-2 {
-            position: static;
+            position: static !important;
         }
 
         .article-1-header-tagline {
-            flex-direction: column;
-            gap: 6px;
+            flex-direction: column !important;
+            gap: 8px !important;
         }
 
-        .article-1-header-tagline img {
-            height: 20px;
-        }
-
-        .article-1-image-container {
-            padding: 0px 24px;
-        }
-
-        .article-1-image {
-            height: 420Px;
-        }
-
-        .article-1 {
-            padding: 0px 24px;
-            background-size: 100% 254px;
-        }
-
-        .article-1-text {
-            padding: 0 24px;
-        }
-        
-        .mailing-button {
-            padding: 0px 16px;
-        }
-
-        .article-2 {
-            padding: 0px 24px;
-        }
-
-        .article-2-content {
-            padding: 16px;
-            gap: 24px;
-        }
-
-        .article-2-content ul {
-            font-size: 18px;
-            line-height: 22px;
-        }
-
-        .article-2-images {
-            gap: 8px;
-            height: 128px;
-        }
-
-        /*TEXT STYLES*/
-    
-        .p-title {
-            font-size: 28px;
-        }
-
-        .article-3 {
-            padding: 16px;
-            margin: 24px;
-            gap: 16px;
-        }
-
-        .article-3-image {
-            height: 360Px;
-            background-position: center;
-        }
-
-        .article-3-text {
-            margin-top: 8px;
-            gap: 24px;
-        }
-
-        .article-3-speaker {
-            gap: 8px;
-        }
-
-        .article-3-keynote {
-            gap: 24px;
-        }
-
-        .register-now-bottom img {
-            width: 220px;
-        }
-
-        .mailing-footer {
-            gap: 24px;
-        }
-
-        .footer-legal {
-            padding: 24px 0px;
-            margin: 0px 24px 24px 24px;
+        .article-2-list {
+            margin: -80px 0px -4px -32px !important;
         }
     }
 </style>
@@ -355,67 +24,67 @@
 </head>
 
   
-<body>
+<body style="width:100%; height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0; margin: 0;">
 
-<table border="0" cellspacing="0" style="background-color: #f3f3f3; width: 100%;">
+<table cellspacing="0" cellpadding="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px; padding:0; margin: 0; width: 100%; height: 100%; background-color:#f3f3f3;">
     <tr>
         <td>
 
-            <table class="mailing-body">
+            <table cellspacing="0" cellpadding="0" style="max-width: 600px; margin: auto; font-family: Arial, Helvetica, sans-serif; background-color: white; border-collapse: collapse;">
 
                 <!---------------------------------->
 
                 <tr>
-                    <td class="top-header">
-                        <div class="top-header-1">
-                            <a href="https://www.counselinginschools.org/" target="_blank"><img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/counseling-logo.svg" alt="Logo Counseling In Schools"/></a>
-                        </div>
-                        <div class="top-header-2">
-                            <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/home#" target="_blank"><img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/register-now.svg" alt="Register Now, March 5-6 2026"></a>
-                        </div>
+                    <td style="width: 100%; height: 120px; display: flex; align-items: center; justify-content: center; position: relative;" class="top-header">
+                        <a href="https://www.counselinginschools.org/" target="_blank">
+                            <img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/counseling-logo.png" alt="Logo Counseling In Schools"/>
+                        </a>
+                        <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/home#" target="_blank" style="position: absolute; right: 16px;" class="top-header-2">
+                            <img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/register-now-s.png" alt="Register Now, March 5-6 2026">
+                        </a>
                     </td>
                 </tr>
 
                 <!---------- ARTICLE 1 ---------->
 
-                <tr class="article-1">
+                <tr style="padding: 0px 32px; background-image: url(https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/blue-gradient.jpg);background-repeat: no-repeat; background-size: 100% 224px; background-position: top;">
                     <td>
                         <!---------------------------------->
-                        <table class="article-1-header">
+                        <table cellspacing="0" cellpadding="0" style="width: 100%; margin: 24px 0px; border-collapse: collapse;">
                             <tr>
-                                <td>
-                                    <div>
-                                        <img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/collaboration-in-action.svg" alt="">
-                                    </div>
-                                    <div class="article-1-header-tagline">
-                                        <img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/tagline-01.svg" alt=""><img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/tagline-02.svg" alt="">
-                                    </div>
+                                <td style="text-align: center; padding-bottom: 24px;">
+                                    <img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/collaboration-in-action.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="display: flex; gap: 4px; align-items: center; justify-content: center; margin: -2px 0px;" class="article-1-header-tagline">
+                                    <img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/tagline-01.png" alt="">
+                                    <img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/tagline-02.png" alt="">
                                 </td>
                             </tr>
                         </table>
                         <!---------------------------------->
-                        <table style="width: 100%;">
+                        <table cellspacing="0" cellpadding="0" style="width: 100%; border-collapse: collapse;">
                             <tr>
-                                <td class="article-1-image-container">
-                                    <div class="article-1-image"></div>
+                                <td style="padding: 0px 32px;">
+                                    <img style="width: 100%; height: auto;" src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/art-1.jpg" alt="">
                                 </td>
                             </tr>
                         </table>
                         <!---------------------------------->
-                        <table>
+                        <table cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
                             <tr>
-                                <td class="article-1-text">
-                                    <p class="p-title">
+                                <td style="display: flex; flex-direction: column; gap: 24px; padding: 0 32px;">
+                                    <p style="font-size: 32px; text-transform: uppercase; font-weight: 700; color: #FF9200;">
                                         Be part of the change
                                     </p>
-                                    <p class="p-body">
+                                    <p style="font-size: 16px; margin: -32px 0px 0px 0px;">
                                         Counseling In Schools (CIS) is proud to present the return of our dynamic school-based mental health conference! Over two days, a diverse roster of presenters will illuminate the vital mental health and social-emotional work happening in NYC schools, and you will strengthen your practice through collaborative interventions.
                                     </p>
-                                    <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/agenda" target="_blank">
-                                        <div class="mailing-button">
-                                            <p>Read about the program</p>
-                                            <span class="material-symbols-rounded">arrow_forward_ios</span>
-                                        </div>
+                                    <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/agenda" target="_blank" style="text-decoration: none;">
+                                        <button style="border: none; background-color: #009BFF; height: 44px; color: white; width: fit-content; padding: 0px 24px; display: flex; flex-direction: row; gap: 8px; align-items: center; font-size: 16px; cursor: pointer; text-align: left;">
+                                            Read about the program<img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/arrow.png" alt="" style="height: 20px; width: auto;">
+                                        </button>
                                     </a>
                                 </td>
                             </tr>
@@ -426,80 +95,95 @@
 
                 <!---------- ARTICLE 2 ---------->
 
-                <tr class="article-2">
-                    <td class="p-title">
+                <tr style="padding: 32px 32px 0px 32px; display: flex; flex-direction: column; gap: 32px;">
+                    <td style="font-size: 32px; text-transform: uppercase; font-weight: 700; color: #FF9200;">
                         Why attend<br>
                         Collaboration<br>
                         In Action 2026?
                     </td>
-                    <td class="article-2-content">
-                        <div class="article-2-images">
-                            <div class="article-2-image-1"></div>
-                            <div class="article-2-image-2"></div>
-                            <div class="article-2-image-3"></div>
-                        </div>
-                        <ul>
+                    <td style="background-color: #EFEFEF; padding: 28px; display: flex; flex-direction: column; gap: 32px;">
+                        <table>
+                            <tr>
+                                <td style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; height: 148px;">
+                                    <img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/art-2-01.jpg" alt="" style="width: 100%; height: auto;">
+                                    <img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/art-2-02.jpg" alt="" style="width: 100%; height: auto;">
+                                    <img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/art-2-03.jpg" alt="" style="width: 100%; height: auto;">
+                                </td>
+                            </tr>
+                        </table>
+                        <ul style="font-size: 20px; line-height: 24px; list-style: inside; margin: -4px 0px -4px -32px;" class="article-2-list">
                             <li>2 powerful days</li>
                             <li>30+ expert presenters</li>
                             <li>15+ sessions</li>
                             <li><b>13 CEUs available</b></li>
                             <li>200+ attendees</li>
                         </ul>
-                        <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/speakers" target="_blank">
-                            <div class="mailing-button">
-                                <p>Get to know our amazing cohort of presenters</p>
-                                <span class="material-symbols-rounded">arrow_forward_ios</span>
-                            </div>
+                        <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/speakers" target="_blank" style="text-decoration: none;">
+                            <button style="border: none; background-color: #009BFF; height: 44px; color: white; width: fit-content; padding: 0px 24px; display: flex; flex-direction: row; gap: 8px; align-items: center; font-size: 16px; cursor: pointer; text-align: left;">
+                                Get to know our amazing cohort of presenters<img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/arrow.png" alt="" style="height: 20px; width: auto;">
+                            </button>
                         </a>
                     </td>
                 </tr>
 
                 <!---------- ARTICLE 3 ---------->
 
-                <tr class="article-3">
-                    <td class="p-title" style="color: white;">
+                <tr style="background-color: #FF9200; padding: 32px 32px 16px 32px; margin: 32px; display: flex; flex-direction: column; gap: 32px;">
+                    <td style="font-size: 32px; text-transform: uppercase; font-weight: 700; color: white;">
                         Featured speaker
                     </td>
-                    <td class="article-3-image"></td>
-                    <td class="article-3-text">
-                        <div class="article-3-speaker">
-                            <p style="font-size: 24px; font-weight: 700;">Cathy Malchiodi</p>
-                            <p style="font-size: 16px;">PhD, LPCC, LPAT, REAT</p>
-                        </div>
-                        <div class="article-3-keynote">
-                            <p style="font-size: 16px;"><b>KEYNOTE SPEAKER</b></p>
-                            <p style="font-size: 14px;">
-                                Leading international expert, writer, and educator in the fields of art therapy, expressive arts therapy, trauma and arts in healthcare. She hold a doctorate in psychology, a Licensed Professional Art Therapist, Registered Expressive Arts Therapist, and Licensed Professional Clinical Counselor, and has had over 30 years of experience and education in trauma intervention and disaster relief and integrative approaches to health
-                            </p>
-                        </div>
+                    <td>
+                        <img style="width: 100%; height: auto;" src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/speaker.jpg" alt="">
+                    </td>
+                    <td style="color: white; text-align: center; display: flex; flex-direction: column; gap: 0px;">
+                        <table cellspacing="0" cellpadding="0" style="border-collapse: collapse; padding: 0; margin: 0;">
+                            <tr>
+                                <td style="color: white; text-align: center; padding: 0; margin: 0; border-spacing: 0;">
+                                    <p style="font-size: 24px; font-weight: 700;">Cathy Malchiodi</p>
+                                    <p style="font-size: 16px; margin-top: -16px;">PhD, LPCC, LPAT, REAT</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="display: flex; flex-direction: column; gap: 24px; color: white; text-align: center;">
+                                    <p style="font-size: 16px;"><b>KEYNOTE SPEAKER</b></p>
+                                    <p style="font-size: 14px; margin-top: -16px;">
+                                    Leading international expert, writer, and educator in the fields of art therapy, expressive arts therapy, trauma and arts in healthcare. She hold a doctorate in psychology, a Licensed Professional Art Therapist, Registered Expressive Arts Therapist, and Licensed Professional Clinical Counselor, and has had over 30 years of experience and education in trauma intervention and disaster relief and integrative approaches to health.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
                     </td>
                 </tr>
 
                 <!---------- REGISTER NOW ---------->
 
-                <tr class="register-now-bottom">
+                <tr>
                     <td style="text-align: center">
-                        <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/home#" target="_blank"><img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/register-now.svg" alt="Register Now, March 5-6 2026"></a>
+                        <a href="https://counseling-in-schools.ce-go.com/collaboration-in-action-a-school-based-mental-health-conference/home#" target="_blank"><img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/register-now-l.png" alt="Register Now, March 5-6 2026"></a>
                     </td>
                 </tr>
 
                 <!---------- LUNCH PROVIDED ---------->
 
-                <tr class="lunch-bar">
+                <tr style="background-color: #FF9200; height: 64px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 32px 0px;">
                     <td style="font-size: 32px; font-weight: 700; text-transform: uppercase; color: white;">Lunch provided</td>
                 </tr>
 
                 <!------------- FOOTER ------------->
 
-                <tr class="mailing-footer">
-                    <td class="top-header-1">
-                        <a href="https://www.counselinginschools.org/" target="_blank"><img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/811c733e028d404c77f172d06285de66e98a1317/images/counseling-logo.svg" alt="Logo Counseling In Schools"/></a>
+                <tr style="display: flex; flex-direction: column; gap: 32px; justify-content: center; align-items: center; background-color: white;">
+                    <td>
+                        <a href="https://www.counselinginschools.org/" target="_blank">
+                            <img src="https://raw.githubusercontent.com/roacesar/Mailing-Holmes/refs/heads/main/images/optimized/counseling-logo.png" alt="Logo Counseling In Schools"/>
+                        </a>
                     </td>
-                    <td class="footer-legal">
+                    <td style="font-size: 10px; text-align: center; border-top: 1px solid #96B6A4; padding: 16px 0px; margin: 0px 32px 32px 32px;">
                         <p>
                             Counseling In Schools is supporting the emotional and social wellbeing of New York City school communities, creating programs that equip children, families, teachers, and administrators with tools and support to flourish and thrive.
                             <br><br>
-                            © Counseling In Schools | <a href="https://www.counselinginschools.org/privacy-policy/">Privacy</a><br>
+                            © Counseling In Schools | <a href="https://www.counselinginschools.org/privacy-policy/" style="text-decoration: underline; color: black;">Privacy</a><br>
                             Counseling In Schools is a registered 501(c)(3) organization
                         </p>
                     </td>
